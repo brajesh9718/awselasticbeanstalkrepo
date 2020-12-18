@@ -4,15 +4,14 @@ version: 0.2
 phases:
   pre_build:
     commands:
-    - echo "Entered the pre-build phase"
+      - echo Nothing to do in the pre_build phase...
   build:
     commands:
-    - echo "Entered build phase"
-    - mvn clean prepare-package war:exploded
+      - echo Build started on `date`
+      - mvn install
   post_build:
     commands:
-    - echo "Entered the post-build phase"
-    - mv target/deploy ./
+      - echo Build completed on `date`
 artifacts:
   files:
-    - deploy/**/*
+    - target/**/*
