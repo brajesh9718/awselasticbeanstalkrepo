@@ -2,16 +2,13 @@
 
 version: 0.1
 phases:
-  install:
-    runtime-versions:
-      java: corretto8
+
   build:
     commands:
       - echo Build started on `date`       
   post_build:
     commands:
-      - echo Build completed on `date`
-      - mvn package
+      - echo Build completed on `date`      
 artifacts:
   files:
     - target/awselasticgitapp.war
