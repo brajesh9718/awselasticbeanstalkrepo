@@ -1,10 +1,8 @@
 # This file controls the AWS CodeBuild
 
-version: 0.2
+version: 0.1
 phases:
-  install:
-    runtime-versions:
-      java: corretto8
+
   build:
     commands:
       - echo Build started on `date`       
@@ -13,5 +11,5 @@ phases:
       - echo Build completed on `date`      
 artifacts:
   files:
-    - target/*.war
+    - target/awselasticgitapp.war
   discard-paths: yes
