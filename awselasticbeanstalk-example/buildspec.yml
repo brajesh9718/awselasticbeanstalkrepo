@@ -2,7 +2,6 @@
 
 version: 0.1
 phases:
-
   build:
     commands:
       - echo Build started on `date`       
@@ -11,5 +10,5 @@ phases:
       - echo Build completed on `date`      
 artifacts:
   files:
-    - target/awselasticgitapp.war
+    - target/*.war
   discard-paths: yes
