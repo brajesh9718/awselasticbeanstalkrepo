@@ -10,5 +10,5 @@ phases:
       - echo Build completed on `date`      
 artifacts:
   files:
-    - target/*.war
+    - target/awswebapp-0.0.1-SNAPSHOT.war
   discard-paths: yes
