@@ -13,6 +13,5 @@ phases:
       - echo Build completed on `date`
       - mvn package
 artifacts:
-  files:
-    - source: target/awselasticgitapp.war 
+  files:    
     - destination: /home/ec2-user
