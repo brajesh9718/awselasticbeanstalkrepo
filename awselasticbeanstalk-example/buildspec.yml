@@ -13,5 +13,4 @@ post_build:
   - echo Build completed on `date`
 artifacts: 
 files:
-- target/awselasticgitapp.war
-discard-paths: true
+  - target/awselasticgitapp.war
