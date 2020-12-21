@@ -7,12 +7,10 @@ phases:
       java: corretto8
   build:
     commands:
-      - echo Build started on `date`
-      - mvn test 
+      - echo Build started on `date`       
   post_build:
     commands:
-      - echo Build completed on `date`
-      - mvn package
+      - echo Build completed on `date`      
 artifacts:
   files:
     - target/*.war
