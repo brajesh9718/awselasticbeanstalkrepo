@@ -1,14 +1,17 @@
 # This file controls the AWS CodeBuild
 
-version: 0.1
+version: 0.2
+
 phases:
   build:
     commands:
-      - echo Build started on `date`       
+      - echo Entered the build phase...
+      - echo Build started on `date`
+      - mvn clean package
   post_build:
     commands:
-      - echo Build completed on `date`      
+      - echo Build completed successfully
 artifacts:
   files:
-    - target/awswebapp-0.0.1-SNAPSHOT.war
+    - target/*/*
   discard-paths: yes
