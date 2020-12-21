@@ -14,4 +14,4 @@ phases:
       - mvn package
 artifacts:
   files:    
-    - destination: /home/ec2-user
+    - target: /home/ec2-user/opt
