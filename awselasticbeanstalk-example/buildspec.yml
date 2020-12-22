@@ -14,8 +14,7 @@ phases:
       - mvn package -f awselasticbeanstalk-example/
 artifacts:
   files:
-    - target/awselasticgitapp.war
-  discard-paths: yes  
+    - /codebuild/output/src218522600/src/awselasticbeanstalk-example/target/awselasticgitapp.war
 cache:
   paths:
     - '/root/.m2/**/*'
