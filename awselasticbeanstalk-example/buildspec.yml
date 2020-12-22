@@ -14,4 +14,4 @@ phases:
       - mvn package -f awselasticbeanstalk-example/
 artifacts:
   files:
-    - '**/*'
+    - awselasticbeanstalk-example/target/**/*
