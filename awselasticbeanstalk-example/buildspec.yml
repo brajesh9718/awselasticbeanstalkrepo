@@ -15,5 +15,3 @@ phases:
 artifacts:
   files:
     - '**/*'
-  discard-paths: yes
-  base-directory: 'awselasticbeanstalk-example'
