@@ -7,7 +7,7 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - mvn clean package
+      - mvn clean install -f awselasticbeanstalk-example/pom.xml
   post_build:
     commands:
       - echo Build completed successfully
