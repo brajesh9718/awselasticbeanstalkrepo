@@ -12,9 +12,10 @@ phases:
     commands:
       - echo Build Package Start....
       - mvn package -f awselasticbeanstalk-example/
+      - mv target/awselasticgitapp.war awselasticgitapp.war
 artifacts:
   files:
-    - /codebuild/output/src218522600/src/awselasticbeanstalk-example/target/awselasticgitapp.war
+    - awselasticgitapp.war
 cache:
   paths:
     - '/root/.m2/**/*'
