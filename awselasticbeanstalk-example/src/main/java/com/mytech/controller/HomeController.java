@@ -8,6 +8,6 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String sayHello() {
-		return "Hello Guys Welcome to AWS ElasticsBeans App.......!!!!!!";
+		return "Let me Change this .......!!!!!!";
 	}
 }
