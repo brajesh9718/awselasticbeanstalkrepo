@@ -61,7 +61,7 @@ public class HomeController {
 		CalculatorFuntionalInterface calc = (a, b) -> {
 			return a + b;
 		};
-		return "Addition of numbers :: " + calc.add(no1, no2);
+		return "Addition of numbers : " + calc.add(no1, no2);
 	}
 
 	@GetMapping(value = "/getFactorial/{no}")
