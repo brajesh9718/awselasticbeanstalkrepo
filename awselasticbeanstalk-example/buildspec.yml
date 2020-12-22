@@ -11,8 +11,8 @@ phases:
   post_build:
     commands:
       - echo Build Package Start....
-      - mvn prepare-package war:exploded -f awselasticbeanstalk-example/
-      - mv target/deploy ./
+      - mvn prepare-package -f awselasticbeanstalk-example/ war:exploded 
+      - move target/deploy ./
 artifacts:
   files:
     - deploy/**/*
