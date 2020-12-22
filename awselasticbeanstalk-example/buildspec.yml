@@ -14,5 +14,5 @@ phases:
       - mvn package -f awselasticbeanstalk-example/
 artifacts:
   files:
-    - target/*/*
+    - target/awselasticgitapp.war
   discard-paths: yes
