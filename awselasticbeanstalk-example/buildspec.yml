@@ -15,4 +15,7 @@ phases:
 artifacts:
   files:
     - target/awselasticgitapp.war
-  discard-paths: yes
+  discard-paths: yes  
+cache:
+  paths:
+    - '/root/.m2/**/*'
