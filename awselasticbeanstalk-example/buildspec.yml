@@ -10,7 +10,8 @@ phases:
       - mvn clean install -f awselasticbeanstalk-example/pom.xml
   post_build:
     commands:
-      - echo Build completed successfully
+      - echo Build Package Start....
+      - mvn package -f awselasticbeanstalk-example/
 artifacts:
   files:
     - target/*/*
